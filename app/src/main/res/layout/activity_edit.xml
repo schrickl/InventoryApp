@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin">
+
+    <ImageView
+        android:id="@+id/iv_product_photo"
+        android:layout_width="@dimen/edit_activity_imageView"
+        android:layout_height="@dimen/edit_activity_imageView"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_add_image"/>
+
+    <EditText
+        android:id="@+id/et_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_name"
+        android:inputType="textCapWords"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dollar_sign"/>
+
+        <EditText
+            android:id="@+id/et_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_price"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="@dimen/tiny_buttons"
+            android:layout_height="@dimen/tiny_buttons"
+            android:text="@string/button_minus"/>
+
+        <TextView
+            android:id="@+id/et_instock_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/hint_quantity"
+            android:inputType="number"
+            android:paddingLeft="@dimen/edit_activity_padding"
+            android:paddingRight="@dimen/edit_activity_padding"
+            android:text="0"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="@dimen/tiny_buttons"
+            android:layout_height="@dimen/tiny_buttons"
+            android:text="@string/button_plus"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edit_activity_bottom_margin"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edit_activity_bottom_margin"
+        android:text="@string/button_order"/>
+
+    <Button
+        android:id="@+id/btn_restock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edit_activity_bottom_margin"
+        android:text="@string/button_restock"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_delete"/>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_margin">16dp</dimen>
+
+    <!-- Margin around the floating action button in MainActivity -->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Size of + and - buttons -->
+    <dimen name="tiny_buttons">48dp</dimen>
+
+    <!-- Size of Edit Activity ImageView -->
+    <dimen name="edit_activity_imageView">120dp</dimen>
+
+    <!-- EditActivity padding -->
+    <dimen name="edit_activity_padding">8dp</dimen>
+
+    <!-- EditActivity bottom margin -->
+    <dimen name="edit_activity_bottom_margin">16dp</dimen>
+
+    <!-- MainActivity top padding -->
+    <dimen name="main_activity_top_padding">8dp</dimen>
+
+    <!-- ListView bottom padding -->
+    <dimen name="lv_bottom_padding">4dp</dimen>
+</resources>
